@@ -1,8 +1,8 @@
-package Square;
-import Form.Form;
-public class Square extends Form {
+package square;
+import form.form;
+public class square extends form {
     private double side;
-    public Square(double side) {
+    public square(double side) {
         this.side=side;
     }
 

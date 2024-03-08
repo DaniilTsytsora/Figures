@@ -1,12 +1,12 @@
-package Triangle;
-import Form.Form;
-public class Triangle extends Form {
+package triangle;
+import form.form;
+public class triangle extends form {
     private double side1;
     private double side2;
     private double side3;
 
 
-    public Triangle(double side1, double side2, double side3) {
+    public triangle(double side1, double side2, double side3) {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;

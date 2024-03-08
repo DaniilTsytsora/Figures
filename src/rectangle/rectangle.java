@@ -1,10 +1,10 @@
-package Rectangle;
-import Form.Form;
-public class Rectangle extends Form {
+package rectangle;
+import form.form;
+public class rectangle extends form {
     private double length;
     private double width;
 
-    public Rectangle(double length, double width) {
+    public rectangle(double length, double width) {
         this.length = length;
         this.width = width;
 

@@ -1,9 +1,9 @@
-package Circle;
-import Form.Form;
-public class Circle extends Form {
+package circle;
+import form.form;
+public class circle extends form {
     private double radius;
 
-    public Circle(double radius) {
+    public circle(double radius) {
         this.radius = radius;
     }
 
