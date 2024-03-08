@@ -1,86 +1,10 @@
+import Circle.Circle;
+import Rectangle.Rectangle;
+import Square.Square;
+import Triangle.Triangle;
+
+
 import java.util.Scanner;
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-abstract class Form {
-    abstract double getArea();
-    abstract double getPerimeter();
-}
-
-class Square extends Form {
-    private double side;
-    public Square(double side) {
-        this.side = side;
-    }
-
-    @Override
-    double getArea() {
-        return side*side;
-    }
-
-    @Override
-    double getPerimeter(){
-        return 4*side;
-    }
-}
-
-class Rectangle extends Form {
-    private double length, width;
-    public Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
-
-    }
-    @Override
-    double getArea() {
-        return length*length;
-    }
-    @Override
-    double getPerimeter() {
-        return 2*(length+width);
-    }
-}
-
-class Circle extends Form {
-    private double radius;
-    public Circle(double radius) {
-        this.radius = radius;
-    }
-
-    @Override
-    double getArea() {
-        return Math.PI*radius*radius;
-    }
-
-    @Override
-    double getPerimeter() {
-        return 2*Math.PI*radius;
-    }
-}
-
-class Triangle extends Form {
-    private double side1, side2, side3;
-
-    public Triangle (double side1, double side2, double side3) {
-        this.side1=side1;
-        this.side2=side2;
-        this.side3=side3;
-    }
-
-    @Override
-    double getArea() {
-        double s = (side1+side2+side3)/2;
-        return Math.sqrt(s*(s-side1)*(s-side2)*(s-side3));
-    }
-
-    @Override
-    double getPerimeter() {
-        return side1+side2+side3;
-    }
-
-}
-
-
-
 
 
 public class Main {
